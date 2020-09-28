@@ -237,7 +237,7 @@
               内容<br>
               <textarea name="content" cols="70" rows="3" maxlength="2000" required class="m-roundBorder"style="margin-top: 0;"></textarea>
               タグ<textarea name="tags" cols="70" rows="2" maxlength="255" class="m-roundBorder" style="margin-top: 0;"></textarea>
-            <strong><p>※複数タグをつける場合は、「 / (スラッシュ) 」で区切ってください</p></strong>
+            <strong>※複数タグをつける場合は、「 / (スラッシュ) 」で区切ってください</strong>
               <div class="m-btnGroup">
                 <p class="m-btnGroup_item"><input type="submit" class="m-btn" value="作成"></p>
               </div>

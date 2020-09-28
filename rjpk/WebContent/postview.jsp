@@ -9,7 +9,7 @@
          contentType="text/html;charset=utf-8" %>
 
 
-<%--  /*String postNumber = request.getParameter("postnumber");
+<%String postNumber = request.getParameter("postnumber");
   boolean isEdit = request.getParameter("isedit").equals("true");
 
   Post post = new Post();
@@ -41,7 +41,8 @@
 
   if (comments.size() < 1) {
     hasComment = false;
-  }*/--%>
+  }
+  %>
 
 
 <!DOCTYPE html>
@@ -130,7 +131,6 @@
 
 <div class="m-container m-pageBodyInner">
   <div class="m-roundBox m-roundBox-min-md">
-    <main class="l-main" id="main">
 
         <div title="topic-upper"> <%-- トピックの上段部 --%>
           <h2 class="m-section_heading m-section_heading-h2">${post.title}</h2><br>

@@ -106,8 +106,8 @@
         <div class="l-header_function">
           <div class="l-header_nav">
             <ul class="l-header_nav_items">
-              <li class="l-header_nav_item"><h2><a href="index">トップ</a></li></h2>
-              <li class="l-header_nav_item"><h2><a href="postlist">トピック一覧</a></li></h2>
+              <li class="l-header_nav_item"><h2><a href="index">トップ</a></h2></li>
+              <li class="l-header_nav_item"><h2><a href="postlist">トピック一覧</a></h2></li>
               <li class="l-header_nav_item">
                 <form id="form1" class="form" action="TagSearchServlet" method="get">
                   <input id="sbox" id="s" name="search" maxlength="28" type="text" placeholder="タグ検索" required>
@@ -151,6 +151,7 @@
               </ul><hr class="h">
               </div>
               </c:forEach>
+             <table>
               <%--
                   <tr><th>掲示物番号</th><th>作成者</th>
                   <th><a href="掲示物リンク">タイトル</a></th><th>掲示日</th></tr>
