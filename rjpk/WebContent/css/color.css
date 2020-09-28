@@ -1,0 +1,111 @@
+
+
+@font-face {
+	font-family: 'hana';
+	src: url('hana.ttf');
+}
+
+body{
+	color: #B36822;
+	font-family: hana,"メイリオ";
+
+	font-size: 1.em;
+	background: #ffdf59;
+}
+
+a{
+	color: #C642FF;
+}
+
+::-moz-selection {
+	background-color: #82be28;
+	color: #fff;
+}
+
+.l-header_bar{
+	background: #fff;
+}
+
+.l-header_nav_item a{
+	font-size: 2em;
+	color: inherit;
+}
+
+.l-header_nav_item a:hover {
+	color: #82be28;
+}
+
+
+.l-pageHeader {
+	pading: 0px;
+	background: transparent;
+	text-align: center;
+}
+
+.l-pageHeader_title {
+	position: relative;
+	top: 70%;
+	padding: 0 0 0+px;
+	font-size: 60px;
+	line-height: 1.6;
+	color: #B36822;
+}
+.l-pageHeader_title:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	border-radius: 4px;
+	width: 48px;
+	height: 4px;
+	background: #F5310C;
+	color: #F5310C;
+}
+
+.m-section_heading-h2{
+	color:#B36822;
+}
+
+.m-section_heading-h2:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	border-radius: 4px;
+	width: 40px;
+	height: 4px;
+	background: #F5310C;
+}
+.m-section_content th{
+	color: #000;
+}
+
+.m-roundBox{
+	background: #fff;
+}
+
+.l-footer{
+	color: #000;
+	background: #000;
+}
+
+#form1{
+ position: relative;
+ left: 35em;
+
+}
+
+.h {
+  border-top: 1px dashed #bbb;
+  border-bottom: 1px dashed #fff;
+}
+.hr {
+  border-top: 1px solid #bbb;
+}
