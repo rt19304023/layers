@@ -40,7 +40,7 @@ public class PostEditJudge extends HttpServlet {
         }
 
         if(isPwCorrect) {
-            response.sendRedirect("postview?postnumber="+postNumber+"&isedit=true");
+            response.sendRedirect("PostSelectServlet?postnumber="+postNumber+"&isedit=true");
         } else {
             request.setAttribute("postnumber", postNumber);
             RequestDispatcher dispatcher = request.getRequestDispatcher("pwincorrect");

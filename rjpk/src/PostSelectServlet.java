@@ -56,9 +56,9 @@ public class PostSelectServlet extends HttpServlet {
 		  } else {
 		    tags = StringFormatter.tagsFix(post.getTags());
 		  }
-
+		  post.setPostNumber(postNumber);
 		  request.setAttribute("htmlContent",htmlContent);
-		  request.setAttribute("postNumber",postNumber);
+		  //request.setAttribute("postNumber",postNumber);
 		  request.setAttribute("tags",tags);
 		  request.setAttribute("hasTag",hasTag);
 		  request.setAttribute("isEdit",isEdit);
@@ -71,6 +71,7 @@ public class PostSelectServlet extends HttpServlet {
 		  }
 
 		  request.setAttribute("hasComment",hasComment);
+		  request.setAttribute("comments",comments);
 		  RequestDispatcher dispatchar = request.getRequestDispatcher("postview.jsp");
 		    dispatchar.forward(request, response);
 	}

@@ -125,7 +125,7 @@
               <c:forEach var="post" items="${searchedPost}">
 
 
-                  <div id="post-out"  onclick="location.href='postview?postnumber=${post.postNumber}&isedit=false'"
+                  <div id="post-out"  onclick="location.href='PostSelectServlet?postnumber=${post.postNumber}&isedit=false'"
         style="cursor: pointer;">
         <h4>
         <c:out value="${post.title}" />

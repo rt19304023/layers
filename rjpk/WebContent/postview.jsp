@@ -9,8 +9,8 @@
          contentType="text/html;charset=utf-8" %>
 
 
-<%String postNumber = request.getParameter("postnumber");
-  boolean isEdit = request.getParameter("isedit").equals("true");
+<%--String postNumber = request.getParameter("postnumber"); --%>
+<%--boolean isEdit = request.getParameter("isedit").equals("true");
 
   Post post = new Post();
   ArrayList<Reply> comments = new ArrayList<Reply>();
@@ -42,7 +42,7 @@
   if (comments.size() < 1) {
     hasComment = false;
   }
-  %>
+  --%>
 
 
 <!DOCTYPE html>
@@ -178,7 +178,7 @@
           <br><br>
           <div title="topic-under"><%-- トピックの下段部 --%>
             <form action="PostEditJudge" method="post" >
-            <input type="hidden" name="postnumber" value="${postNumber}">
+            <input type="hidden" name="postnumber" value="${post.postNumber}">
             <c:choose>
               <c:when test="${isEdit}">
                 <input type="submit" value="編集" onclick="form.action='PostEditServlet'"
@@ -304,7 +304,7 @@
       <div title="comment-write"> <%-- コメント入力部 --%>
         <div class="m-roundBox m-roundBox-min-md"style="margin-top: 5em;">
           <form method="post" action="CommentWriteServlet">
-            <input type="hidden" name="postnumber" value="${postNumber}">
+            <input type="hidden" name="postnumber" value="${post.postNumber}">
 
             <h2 class="m-section_heading m-section_heading-h2">コメント入力</h2>
             <br>

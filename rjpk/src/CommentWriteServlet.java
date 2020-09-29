@@ -38,6 +38,6 @@ public class CommentWriteServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        response.sendRedirect("postview?postnumber="+postNumber+"&isedit=false");
+        response.sendRedirect("PostSelectServlet?postnumber="+postNumber+"&isedit=false");
     }
 }

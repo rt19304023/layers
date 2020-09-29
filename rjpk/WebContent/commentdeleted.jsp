@@ -72,7 +72,7 @@
           <div class="l-header_nav">
             <ul class="l-header_nav_items">
             <li>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</li>
-              <li class="l-header_nav_item"><a href="postview?postnumber=${postnumber}&isedit=false">トップに戻る</a></li>
+              <li class="l-header_nav_item"><a href="PostSelectServlet?postnumber=${postnumber}&isedit=false">トップに戻る</a></li>
             </ul>
           </div>
         </main>
